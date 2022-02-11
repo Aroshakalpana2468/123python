@@ -25,7 +25,7 @@ if ENV:
     PROJECT_NAME = environ.get('PROJECT_NAME', None)
     ip_addr = environ.get('APP_URL', None)
     # You kanged our project without forking it, we'll get you DMCA'd.
-    GIT_REPO_URL = environ.get('GIT_REPO_URL', "https://github.com/Dilasnaofficical")
+    GIT_REPO_URL = environ.get('GIT_REPO_URL', "https://github.com/Aroshakalpana2468")
 else:
     BOT_TOKEN = config.BOT_TOKEN
     PROJECT_NAME = config.PROJECT_NAME
@@ -35,7 +35,7 @@ else:
 updater = Updater(token=BOT_TOKEN, workers=1)
 dispatcher = updater.dispatcher
 
-print("If you need more help, join @SlNinjaTeam in Telegram.")
+print("If you need more help, join @aastrem in Telegram.")
 
 
 def start(_bot, update):
@@ -59,7 +59,7 @@ def support(_bot, update):
     """Links to Support"""
     message = update.effective_message
     message.reply_text(
-        f"*Getting Support*\n\nTo get support in using the bot, join [the Team support](https://t.me/SlNinjaTeam).",
+        f"*Getting Support*\n\nTo get support in using the bot, join [the Team support](https://t.me/aastrem).",
         parse_mode="markdown"
     )
 
@@ -68,7 +68,7 @@ def source(_bot, update):
     """Link to Source"""
     message = update.effective_message
     message.reply_text(
-        f"*Source*:\n[Github](https://github.com/Dilasnaofficical).",
+        f"*Source*:\n[Github](https://github.com/Aroshakalpana2468).",
         parse_mode="markdown"
     )
 
